@@ -3,16 +3,20 @@
 */
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-//import { HomeComponent } from './home/home.component';
-//import { MenuComponent } from './menu/menu.component';
-//import { AboutComponent } from './about/about.component';
-//import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component'; //parte in alto della pagina , conterrà navigation bar
+import { MiddleComponent } from './middle/middle.component'; // parte centrale della pagina , conterrà 
+import { FooterComponent } from './footer/footer.component'; // parte in fondo della pagina , conterrà 
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { NavigationButtonComponent } from './navigation-button/navigation-button.component';
+import { TitleComponent } from './title/title.component';
 
 const routes: Routes = [
-  /*{ path: '', component: HomeComponent },
-  { path: 'menu', component: MenuComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent }*/
+  { path: 'header', component: HeaderComponent },
+  { path: 'middle', component: MiddleComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'navigation-bar', component: NavigationBarComponent },
+  { path: 'navigation-button', component: NavigationButtonComponent },
+  { path: 'title', component: TitleComponent },
 ];
 
 @NgModule({
