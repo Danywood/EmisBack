@@ -33,20 +33,7 @@
   nav {
     margin-top: 15px;
   }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
-  }
-  
-  nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ff6f61;
-    border-radius: 5px;
-  }
+
   
   /* Animazione di transizione per il testo */
   @keyframes textAnimation {

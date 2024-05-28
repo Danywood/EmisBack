@@ -1,4 +1,5 @@
 <div class="navigation-bar">
-    <h3>QUESTA E' LA NAV BAR</h3>
-    <app-navigation-button *ngFor='let name of buttonNames' [buttonName]="name"></app-navigation-button>
+    <a href="#" *ngFor='let name of buttonNames'>
+        <app-navigation-button [buttonName]="name"></app-navigation-button>
+    </a>
 </div>
