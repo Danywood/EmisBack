@@ -1,6 +1,6 @@
 /* Stile di base per l'header */
 .header {
-    background: linear-gradient(45deg, #ff6f61, #de6262);
+   /* background: linear-gradient(45deg, #ff6f61, #de6262); */
     padding: 20px 0;
     text-align: center;
     color: #fff;
@@ -9,7 +9,7 @@
   }
   
   /* Ombra del testo per un effetto di profondità */
-  .header h1 {
+  .header app-title {
     font-size: 3em;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
