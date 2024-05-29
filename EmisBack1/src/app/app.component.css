@@ -11,8 +11,20 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-       
+    text-align: center;      
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse; 
+    border-radius: 2px;
+    border-color: white;
+    border-style: double;
+    height: inherit;
+}
+
+.middle {
+    flex: auto;
 }
