@@ -14,6 +14,6 @@ export class NavigationBarComponent {
     public buttonNames: String[];
 
     constructor() {
-        this.buttonNames = ["Home","Contatti","Prodotti","Cazzi"];
+        this.buttonNames = ["Home","Che Cazzo Facciamo","Chi Cazzo Siamo","Dove Cazzo Siamo"];
     }
 }
