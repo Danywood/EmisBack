@@ -1,15 +1,28 @@
 /* Stile di base per l'header */
 .header {
-   /* background: linear-gradient(45deg, #ff6f61, #de6262); */
     padding: 20px 0;
     text-align: center;
-    color: #fff;
     position: relative;
     overflow: hidden;
   }
+
+  .title-box {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .title-box > p {
+    padding: 10px;
+    width: 60%;
+  }
+
+  .title-box > app-title {
+    padding: 10px;
+    width: 40%;
+  }
   
   /* Ombra del testo per un effetto di profondità */
-  .header app-title {
+  .title {
     font-size: 3em;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -22,7 +35,7 @@
     display: block;
     width: 100%;
     height: 5px;
-    background: #fff;
+    background: #fc0000;
     position: absolute;
     bottom: 0;
     left: 0;
