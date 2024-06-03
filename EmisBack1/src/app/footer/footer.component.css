@@ -6,5 +6,29 @@ app-footer {
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 10px 10px 5px;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.footer-arrow > button {
+    height: 50px;
+    width: 50px;
+    background: none;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-size: large;
+    font-weight: 200;
+    transition: 1s;
+}
+
+.footer-arrow > button:hover {
+    background-color: rgba(223, 223, 223, 0.88);
+    transition: 1s;
 }
