@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { MiddleComponent } from "./middle/middle.component";
 import { FooterComponent } from "./footer/footer.component";
-
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -12,5 +11,5 @@ import { FooterComponent } from "./footer/footer.component";
     imports: [RouterOutlet, HeaderComponent, MiddleComponent, FooterComponent]
 })
 export class AppComponent {
-  title = 'EmisBack1';
+  title = 'EmisBack';
 }

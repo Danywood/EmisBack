@@ -7,18 +7,21 @@
   }
 
   .title-box {
+    margin: 10px 10px 5px 5px;
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .title-box > p {
+  .paragraph {
     padding: 10px;
     width: 60%;
+    border: 2px solid black;
   }
 
   .title-box > app-title {
     padding: 10px;
     width: 40%;
+    border: 2px solid black;
   }
   
   /* Ombra del testo per un effetto di profondità */
@@ -35,7 +38,7 @@
     display: block;
     width: 100%;
     height: 5px;
-    background: #fc0000;
+    background: #000;
     position: absolute;
     bottom: 0;
     left: 0;
