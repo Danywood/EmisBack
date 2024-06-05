@@ -1,7 +1,7 @@
 
     <div class="container">
         <app-header></app-header>
-        <app-middle *ngIf="false" class="middle"></app-middle>
-        <app-footer></app-footer>
+        <app-middle *ngIf="isChildVisible" class="middle"></app-middle>
+        <app-footer (valueChange)="handleValueChange($any($event))"></app-footer>
     </div>
 <router-outlet></router-outlet>

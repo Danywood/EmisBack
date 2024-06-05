@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -9,8 +9,13 @@ import { Component, Output } from '@angular/core';
 })
 export class FooterComponent {
 
+  @Output() valueChange = new EventEmitter<boolean>();
+  isMiddleVisible: boolean = false;
+
    onSubmit() {
-    console.log("click");
+    this.isMiddleVisible = !this.isMiddleVisible;
+    this.valueChange.emit(this.isMiddleVisible);
+    console.log(this.isMiddleVisible);
   } 
 
 }
