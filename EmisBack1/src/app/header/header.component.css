@@ -18,14 +18,14 @@
     border: 2px solid black;
   }
 
-  .title-box > app-title {
+  .title-box > .title {
     padding: 10px;
     width: 40%;
     border: 2px solid black;
   }
   
   /* Ombra del testo per un effetto di profondità */
-  .title {
+  .title > app-title {
     font-size: 3em;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);

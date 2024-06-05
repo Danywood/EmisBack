@@ -15,7 +15,6 @@ export class FooterComponent {
    onSubmit() {
     this.isMiddleVisible = !this.isMiddleVisible;
     this.valueChange.emit(this.isMiddleVisible);
-    console.log(this.isMiddleVisible);
   } 
 
 }
