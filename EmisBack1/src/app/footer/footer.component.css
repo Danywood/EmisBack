@@ -29,6 +29,7 @@ app-footer {
 }
 
 .footer-arrow > button:hover {
+    cursor: pointer;
     background-color: rgba(223, 223, 223, 0.88);
     transition: 1s;
 }
