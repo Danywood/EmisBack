@@ -12,7 +12,7 @@ export class NavigationButtonComponent implements OnInit {
   @Input() buttonName: String | undefined;
 
   ngOnInit(): void {
-    console.log("ciao");
+   
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { MiddleComponent } from "./middle/middle.component";
@@ -16,9 +16,21 @@ export class AppComponent {
   title = 'EmisBack';
   isChildVisible: boolean = false;
 
+  @ViewChild('toggleMiddle') toggleMiddle!: ElementRef;
+
+
   handleValueChange(isVisible: boolean) {
-    console.log(this.isChildVisible);
     this.isChildVisible = isVisible;
+    if (this.isChildVisible) {
+      setTimeout(() => {
+        this.scrollToElement();
+      }, 0); // Usa setTimeout per assicurarti che l'elemento sia già visibile nel DOM
+    }
+  }
+
+  scrollToElement() {
+    this.toggleMiddle.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    console.log(this.isChildVisible);
   }
 
 }
