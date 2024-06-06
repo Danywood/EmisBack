@@ -6,14 +6,21 @@ import { NgFor } from '@angular/common';
     selector: 'app-navigation-bar',
     standalone: true,
     templateUrl: './navigation-bar.component.html',
-    styleUrl: './navigation-bar.component.css',
+    styleUrls: ['./navigation-bar.component.css'],
     imports: [NavigationButtonComponent,NgFor]
 })
 export class NavigationBarComponent {
 
-    public buttonNames: String[];
+    public buttonNames: string[];
+    public urlMap: Map<string, string>;
 
     constructor() {
         this.buttonNames = ["Home","Che Cazzo Facciamo","Chi Cazzo Siamo","Dove Cazzo Siamo"];
+        this.urlMap = new Map([
+            ["Home", "/home"],
+            ["Che Cazzo Facciamo", "/che-cazzo-facciamo"],
+            ["Chi Cazzo Siamo", "/chi-cazzo-siamo"],
+            ["Dove Cazzo Siamo", "/dove-cazzo-siamo"]
+        ]);
     }
 }

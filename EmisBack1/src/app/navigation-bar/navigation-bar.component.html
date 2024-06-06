@@ -1,5 +1,5 @@
 <div class="navigation-bar">
-    <a href="#" *ngFor='let name of buttonNames'>
+    <a [href]="urlMap.get(name)" *ngFor='let name of buttonNames'>
         <app-navigation-button [buttonName]="name"></app-navigation-button>
     </a>
 </div>

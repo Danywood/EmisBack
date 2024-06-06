@@ -4,16 +4,28 @@
 }
 
 .a-button {
-    text-decoration: none;
-    padding: 10px 15px;
-    background: none;
-    border: none;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #F7CAC9; /* sfondo rosa */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive; /* font */
+  color: #333; /* testo scuro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera */
   }
+
+  .abutton:active {
+    background-color: #FF69B4; /* sfondo rosa al click */
+    color: #fff; /* testo bianco al click */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* ombra  */
+}
+
   
   .a-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ff6f61;
-    border-radius: 5px;
+    background-color: #FFC5C5; /* sfondo rosa al passaggio del mouse */
+    color: #fff; /* testo bianco al passaggio del mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* ombra */
   }

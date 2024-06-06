@@ -3,5 +3,16 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #F7CAC9; /* bordo rosa  */
+    background-color: #F2F2F2; /* sfondo grigio  */
+    padding: 0 20px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: #333; /* testo scuro */
+}
+
+.navigation-bar a:hover {
+    color: #FFC5C5; /* testo rosa al passaggio del mouse */
 }
